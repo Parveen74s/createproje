@@ -1,11 +1,12 @@
 import React from 'react'
 import { Signupmodal } from './Modal';
+import { Link } from 'react-router-dom';
 const logo = "https://img.freepik.com/free-vector/education-business-logo-template-branding-design-vector-education-center-text_53876-136247.jpg";
 const w =60;
 
-export default function Navbar() {
+ export default function Navbar() {
   return (
-    <div><nav className="navbar navbar-expand-lg shadow bg-dark">
+    <div><nav className="navbar navbar-expand-lg shadow bg-dark fixed-top">
     <div className="container-fluid">
       <a className="navbar-brand" href="#"><img src={logo} width={w}/></a>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,7 +18,7 @@ export default function Navbar() {
             <a className="nav-link active text-white" aria-current="page" href="#">Home</a>
           </li>
           <li className="nav-item">
-            <a className="nav-link text-white" href="#">Link</a>
+            <Link className="nav-link text-white" to ="dashboard">dashboard</Link>
           </li>
           <li className="nav-item dropdown">
             <a className="nav-link text-white dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
