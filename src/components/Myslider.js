@@ -8,13 +8,13 @@ export default function Myslider() {
                     <div id="carouselExample" className="carousel slide">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
-                                <img src="photo/book2.jpg" width="1400"height="750" className="d-block w-100" alt="..." />
+                                <img src="photo/h5.jpg" width="1400"height="750" className="d-block w-100" alt="..." />
                             </div>
                             <div className="carousel-item">
-                                <img src="photo/book1.jpg"width="1400"height="750" className="d-block w-100" alt="..." />
+                                <img src="photo/ho.jpg"width="1400"height="750" className="d-block w-100" alt="..." />
                             </div>
                             <div className="carousel-item">
-                                <img src="photo/book4.jpg"width="1400"height="750"className="d-block w-100" alt="..." />
+                                <img src="photo/bg.jpg"width="1400"height="750"className="d-block w-100" alt="..." />
                             </div>
                         </div>
                         <button className="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">

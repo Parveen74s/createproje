@@ -14,7 +14,7 @@ export function Signupmodal()
             <div class="modal fade" id="signup" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-md">
                     <div class="modal-content">
-                        <div class="modal-header bg-info">
+                        <div class="modal-header bg-primary ">
                             <h1 class="modal-title fs-5" id="exampleModalLabel">User Registration page</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
@@ -24,12 +24,12 @@ export function Signupmodal()
                                     <div className='col-md-6'>
                                         <label class="form-label">Full Name</label>
                                         <input type="text" class="form-control" placeholder="fullname"{...register("fullname",{ required: true })}/>
-                                        {errors.fullname && <div class="form-text text-danger">error message</div>}
+                                        {errors.fullname && <div class="form-text text-danger">required fullname</div>}
                                     </div>
                                     <div className='col-md-6'>
                                         <label class="form-label">Email Id</label>
                                         <input type="email" class="form-control" placeholder='email id'{...register("email id",{ required: true })} />
-                                        {errors.email  && <div class="form-text text-danger">error message</div>}
+                                        {errors.email  && <div class="form-text text-danger">required email id</div>}
                                     </div>
                                     <div className='col-md-6'>
                                         <label class="form-label">Phone No</label>
@@ -47,14 +47,14 @@ export function Signupmodal()
                                         {errors.address && <div class="form-text text-danger">error message</div>}
                                     </div>
                                     <div className='col-md-6'>
-                                        <label class="form-label">UsserName</label>
+                                        <label class="form-label">UserName</label>
                                         <input type="text" class="form-control"{...register("username",{ required: true })} />
-                                        {errors.username && <div class="form-text text-danger">error message</div>}
+                                        {errors.username && <div class="form-text text-danger">required username</div>}
                                     </div>
                                     <div className='col-md-6'>
                                         <label class="form-label">Password</label>
                                         <input type="password" class="form-control"{...register("password",{ required: true })} />
-                                        {errors.password && <div class="form-text text-danger">error message</div>}
+                                        {errors.password && <div class="form-text text-danger">required password</div>}
                                     </div>
                                 </div>
                             </main>
