@@ -41,11 +41,6 @@ export function Signupmodal()
                                         <input type="date" className="form-control" {...register("DOB")}/>
                                         {errors.dob && <div className="form-text text-danger">error message</div>}
                                     </div>
-                                    <div classNameName='col-md-12'>
-                                        <label className="form-label">Address</label>
-                                        <textarea classNameName='form-control' rows={5} {...register("address",{ required: true })}> type address here...</textarea>
-                                        {errors.address && <div className="form-text text-danger">error message</div>}
-                                    </div>
                                     <div classNameName='col-md-6'>
                                         <label className="form-label">UserName</label>
                                         <input type="text" className="form-control"{...register("username",{ required: true })} />

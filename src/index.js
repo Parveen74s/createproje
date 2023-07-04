@@ -7,18 +7,25 @@ import Myslider from './components/Myslider';
 import Mylogin from './components/Mylogin';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Custom from './components/pages/Custom';
+import Myformlayout from './components/Myformlayout';
+import Formdesign1 from './components/Formdesign1';
+import Formdesign2 from './components/Formdesign2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-      <Navbar/>
+      <Navbar />
       <Routes>
-      <Route path='' element={<Mylogin/>}></Route>
-        <Route path='dashboard' element={<Myslider/>}/>
-        <Route path='custom' element={<Custom/>}/>
+        <Route path='' element={<Mylogin />}></Route>
+        <Route path='dashboard' element={<Myslider />} />
+        <Route path='custom' element={<Custom />} />
+        <Route path='myform' element={<Myformlayout />}>
+          <Route path='formdesign' element={<Formdesign1/>}/>
+          <Route path='<formdesign' element={<Formdesign2/>}/>
+        </Route>
       </Routes>
-      </BrowserRouter>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
