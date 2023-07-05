@@ -18,13 +18,13 @@ root.render(
       <Navbar />
       <Routes>
         <Route path='' element={<Mylogin />}></Route>
-        <Route path='dashboard' element={<Myslider />} />
-        <Route path='custom' element={<Custom />} />
-        <Route path='myform' element={<Myformlayout />}>
-          <Route path='formdesign' element={<Formdesign1/>}/>
-          <Route path='<formdesign' element={<Formdesign2/>}/>
+        <Route path='dashboard' element={<Myslider />}/>
+        <Route path='custom' element={<Custom />}/>
+        <Route path='myform' element={<Myformlayout/>}>
+          <Route path='formdesign1' element={<Formdesign1/>}/>
+          <Route path='formdesign2' element={<Formdesign2/>}/>
         </Route>
-      </Routes>
+        </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );

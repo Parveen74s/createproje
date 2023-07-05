@@ -1,5 +1,5 @@
 import React from 'react'
-import { Signupmodal } from './Modal';
+import { Signupmodal } from './Modal'
 import { Link } from 'react-router-dom';
 const logo = "https://img.freepik.com/free-vector/education-business-logo-template-branding-design-vector-education-center-text_53876-136247.jpg";
 const w = 60;
