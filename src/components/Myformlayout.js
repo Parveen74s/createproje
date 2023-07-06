@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, Outlet } from 'react-router-dom'
 
 export default function Myformlayout() {
+    let mydata = "this is variable";
     return (
         <div className='container fluid ' style={{ marginTop: '85px' }} >
             <div className='row'>
@@ -22,7 +23,7 @@ export default function Myformlayout() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="formstyle3" className="nav-link link-body-emphasis">
+                                    <Link to="formdesign3" className="nav-link link-body-emphasis">
                                         form layout 3
                                     </Link>
                                 </li>
@@ -42,7 +43,7 @@ export default function Myformlayout() {
                 </div>
                 <div className='col-md-10 bg-info'>
                     <div className='border p-5'>
-                        <h4>content</h4>
+                        <h4>content {mydata}</h4>
                         <Outlet></Outlet>
                     </div>
                 </div>
