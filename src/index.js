@@ -10,6 +10,8 @@ import Custom from './components/pages/Custom';
 import Myformlayout from './components/Myformlayout';
 import Formdesign1 from './components/Formdesign1';
 import Formdesign2 from './components/Formdesign2';
+import Myfetchapi from './components/Myfetchapi';
+import Mydetailspage from './components/Mydetailspage';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
@@ -24,6 +26,8 @@ root.render(
           <Route path='formdesign1' element={<Formdesign1/>}/>
           <Route path='formdesign2' element={<Formdesign2/>}/>
         </Route>
+        <Route path='fetchapi' element={<Myfetchapi/>}/>
+        <Route path='fetchapi/:id' element={<Mydetailspage/>}/>
         </Routes>
     </BrowserRouter>
   </React.StrictMode>
