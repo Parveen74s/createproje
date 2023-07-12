@@ -1,3 +1,15 @@
 .modal-backdrop{
     z-index: 1 !important;
 }
+.myerror{
+    font-size: 150px;
+    color: black;
+}
+.mypage{
+    font-size: 40px;
+    color: black;
+    border-radius: 2px;
+}
+.mypage{
+
+}

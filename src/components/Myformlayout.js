@@ -23,8 +23,8 @@ export default function Myformlayout() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link to="formdesign3" className="nav-link link-body-emphasis">
-                                        form layout 3
+                                    <Link to="mychart" className="nav-link link-body-emphasis">
+                                        chart
                                     </Link>
                                 </li>
                                 <li>
@@ -41,7 +41,7 @@ export default function Myformlayout() {
                         </div>
                     </aside>
                 </div>
-                <div className='col-md-10 bg-info'>
+                <div className='col-md-10'>
                     <div className='border p-5'>
                         <h4>content {mydata}</h4>
                         <Outlet></Outlet>
