@@ -14,14 +14,24 @@ import Myfetchapi from './components/Myfetchapi';
 import Mydetailspage from './components/Mydetailspage';
 import Myerrorpage from './Myerrorpage';
 import Mychart from './components/Mychart';
+import { Auth0Provider } from '@auth0/auth0-react';
+import Myauth0 from './components/Myauth0';
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 
 root.render(
   <React.StrictMode>
+    <Auth0Provider
+    domain="dev-mbmvtg85og4plmm7.us.auth0.com"
+    clientId="1GYEiJqIvd4iiJitSMOCFp4Snm79TDBr"
+    authorizationParams={{
+      redirect_uri: window.location.origin
+    }}>
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route path='' element={<Mylogin />}></Route>
+        {/* <Route path='' element={<Mylogin />}></Route> */}
+        <Route path='' element={<Myauth0/>}></Route>
         <Route path='dashboard' element={<Myslider />}/>
         <Route path='custom' element={<Custom />}/>
         <Route path='myform' element={<Myformlayout/>}>
@@ -34,6 +44,7 @@ root.render(
         <Route path='*' element={<Myerrorpage/>}/>
         </Routes>
     </BrowserRouter>
+    </Auth0Provider>
   </React.StrictMode>
 );
 
